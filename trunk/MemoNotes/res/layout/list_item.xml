@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 	
+	android:layout_height="fill_parent" 
+	android:paddingLeft="5dip" 
+	android:background="@drawable/bar"
+	android:orientation="vertical">
+	
+<LinearLayout 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:paddingTop="2dip" 
+	android:id="@+id/linearLayout1">
+
+<TextView 
+    android:text="2012-8-19" 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:paddingRight="2dip" 
+    android:textSize="15dip" 
+    android:id="@+id/ItemID"
+    android:textColor="@color/yellow"
+    />
+ 
+ <TextView 
+    android:text="Sunday" 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:paddingLeft="2dip" 
+    android:textSize="15dip" 
+    android:id="@+id/ItemWeekday"
+    android:textColor="@color/yellow"
+    />
+    
+</LinearLayout>
+ 
+<TextView 
+	android:text="TextView02" 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:textSize="18dip" 
+	android:id="@+id/ItemContent"
+	/>	
+
+
+</LinearLayout>
+
