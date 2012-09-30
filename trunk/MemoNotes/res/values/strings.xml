@@ -4,5 +4,7 @@
     <string name="app_name">MemoNotes</string>
 
     <color  name="red"   >#FF0000</color>
+    <color  name="darkblue">#6060FF</color>
     <color  name="yellow">#FFFF00</color>
+    <color  name="white">#BFBFBF</color>
 </resources>
