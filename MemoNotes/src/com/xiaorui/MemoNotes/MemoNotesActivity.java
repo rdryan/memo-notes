@@ -359,7 +359,7 @@ public class MemoNotesActivity extends Activity {
    			String endBak = cur.getString(ColumEnd);
    			int weekdayBak = cur.getInt(ColumWeekday);
    
-   			boolean ret = mDB.updateData(GetTodayDate(), startTime, endBak, weekdayBak, "");
+   			boolean ret = mDB.updateData(id, startTime, endBak, weekdayBak, "");
    			if (!ret) 	//if update database not success, then return
    			{
    				ShowMsg("Modify Sign In time failed!");
@@ -376,12 +376,12 @@ public class MemoNotesActivity extends Activity {
    		
    		if (count != 0)		//Have this record in database
    		{
-   			int ColumEnd = cur.getColumnIndex("t_end");
+   			int ColumStart = cur.getColumnIndex("t_start");
    			int ColumWeekday = cur.getColumnIndex("weekday");
-   			String StartBak = cur.getString(ColumEnd);
+   			String StartBak = cur.getString(ColumStart);
    			int weekdayBak = cur.getInt(ColumWeekday);
    
-   			boolean ret = mDB.updateData(GetTodayDate(), StartBak, endTime, weekdayBak, "");
+   			boolean ret = mDB.updateData(id, StartBak, endTime, weekdayBak, "");
    			if (!ret) 	//if update database not success, then return
    			{
    				ShowMsg("Modify Sign Out time failed!");
