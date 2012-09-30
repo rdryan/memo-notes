@@ -37,6 +37,8 @@ public class MemoNotesActivity extends Activity {
 	   
 	private String[] Weekdays = {"Sunday", "Monday", "Tuesday", "Wednesday",
                 "Thursday", "Friday", "Saturday"};	 
+	private int[] SideBars = {R.drawable.side0, R.drawable.side1, R.drawable.side2,
+			R.drawable.side3, R.drawable.side4, R.drawable.side5, R.drawable.side6 };
 	
     protected static final int MENU_MODIFY_START = Menu.FIRST;
     protected static final int MENU_MODIFY_END = Menu.FIRST+1;
@@ -211,6 +213,7 @@ public class MemoNotesActivity extends Activity {
             
             String weekday = Weekdays[cur.getInt(columWeekday)];
             
+            map.put("ItemImage", SideBars[cur.getInt(columWeekday)]);
             map.put("ItemID", cur.getString(columID));		//date in list view     
             map.put("ItemWeekday", weekday);
             map.put("ItemContent", content);  				//content in list view
@@ -221,8 +224,8 @@ public class MemoNotesActivity extends Activity {
                     
         final SimpleAdapter listItemAdapter = new SimpleAdapter(this,listItem,
             R.layout.list_item,       
-            new String[] {"ItemID", "ItemWeekday", "ItemContent"},   
-            new int[] {R.id.ItemID, R.id.ItemWeekday, R.id.ItemContent}  
+            new String[] {"ItemImage", "ItemID", "ItemWeekday", "ItemContent"},   
+            new int[] {R.id.ItemImage, R.id.ItemID, R.id.ItemWeekday, R.id.ItemContent}  
         );  
                 
         mListView.setAdapter(listItemAdapter);  
