@@ -3,9 +3,21 @@
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_width="fill_parent" 	
 	android:layout_height="fill_parent" 
-	android:paddingLeft="5dip" 
-	android:background="@drawable/bar"
-	android:orientation="vertical">
+	android:paddingLeft="1dip" 
+	android:background="@drawable/bar">	
+
+<ImageView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:paddingRight="4dip" 
+	android:paddingTop="2dip" 
+	android:id="@+id/ItemImage"
+	/> 
+	
+<LinearLayout 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:orientation="vertical">		
 	
 <LinearLayout 
 	android:layout_height="wrap_content" 
@@ -44,6 +56,7 @@
 	android:textColor="@color/white"
 	/>	
 
+</LinearLayout>
 
 </LinearLayout>
 
