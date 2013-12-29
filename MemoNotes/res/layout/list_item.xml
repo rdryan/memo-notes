@@ -51,7 +51,8 @@
 	android:text="TextView02" 
 	android:layout_height="wrap_content" 
 	android:layout_width="fill_parent" 
-	android:textSize="19dip" 
+	android:gravity="center"
+	android:textSize="26dip" 
 	android:id="@+id/ItemContent"
 	android:textColor="@color/white"
 	/>	
