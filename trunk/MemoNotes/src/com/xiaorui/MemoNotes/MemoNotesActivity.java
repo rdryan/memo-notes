@@ -5,7 +5,6 @@ import java.util.HashMap;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -17,8 +16,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnCreateContextMenuListener;
-import android.widget.AbsListView;
-import android.widget.AbsListView.OnScrollListener;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.Button;
 import android.widget.EditText;
@@ -206,9 +203,11 @@ public class MemoNotesActivity extends Activity {
             int columEnd = cur.getColumnIndex("t_end");
             int columWeekday = cur.getColumnIndex("weekday");
             
-            String content = "sign IN at ";
+            //String content = "sign IN at ";
+            String content = "";
             content += cur.getString(columStart);
-            content += " -- sign OUT at ";
+            //content += " -- sign OUT at ";
+            content += " -- ";
             content += cur.getString(columEnd);   
             
             String weekday = Weekdays[cur.getInt(columWeekday)];
