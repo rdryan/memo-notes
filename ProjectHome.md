@@ -1,0 +1,1 @@
+This open source project memo-notes is a study project for learning how to use ListView, SQLite3 database, and how to use Dialog Box. Just for fun.
